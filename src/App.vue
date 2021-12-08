@@ -44,7 +44,7 @@ export default {
         return s1.name.toLowCase() < s2.name.toLowCase() ? -1 : 1
       })
     },
-    studentArriveOrLeft(student, present){
+    studentArrivedOrLeft(student, present){
     // find student in array of students
     //update present attribute
 
@@ -56,7 +56,7 @@ export default {
 
     if(updateStudent){ 
       updateStudent.present = present
-      this.mostRecentStudent = student // this will tell msg to studentMessage the most recent student
+      this.mostRecentStudent =updateStudent // this will tell msg to studentMessage the most recent student
     }
   },
   studentDeleted(student){

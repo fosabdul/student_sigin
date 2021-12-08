@@ -2,7 +2,7 @@
   <div> 
 
       <div v-show="student.name">
-        <div v-if="student.present" class="alert alert-primary" role="alert">
+        <div v-if="student.present" class="alert alert-primary">
          
               Welcome, {{ student.name }}!
           </div>
